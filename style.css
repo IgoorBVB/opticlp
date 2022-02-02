@@ -1,0 +1,341 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor1: #B7D07D;
+    --cor2: #75942C;
+    --optic-green: #9DC73B;
+    --cor3: #384715;
+    --cor4: #3F472B;
+    --cor-paragrafo: #0f1923;
+
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-principal: 'Bebas Neue', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: whitesmoke;
+}
+
+header {
+    background: var(--optic-green);
+    min-height: 73px;
+    box-shadow: 0px 1px 8px #00000067;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+nav img {
+    height: 80px;
+    width: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav a {
+    color: rgb(27, 27, 27);
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.363);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main {
+    background-color: whitesmoke;
+}
+
+main img {
+    display: block;
+    width: 100%;
+}
+
+main h2 {
+    color: var(--cor-paragrafo);
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+main p {
+    color: var(--cor-paragrafo);
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+article {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.paragrafo {
+    text-align: justify;
+    margin: 15px 0px;
+    
+}
+
+#roster {
+    width: 100%;
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+    
+}
+
+.player-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 16px;
+    border: 2px solid #E4E4E4;
+    margin-bottom: 10px;
+}
+
+.player-card:hover {
+    background-color: #e4e4e481;
+}
+
+.player-info {
+    display: flex;
+    height: 100%;
+}
+.player-text {
+    margin-left: 15px;  
+}
+
+.player-tag {
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--cor-paragrafo);
+}
+
+.player-name {
+    font-family: var(--fonte-principal);
+    color: #808191;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    
+}
+
+.player-info img {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+    padding: 0px 20px 0px 20px;
+}
+
+.player-country {
+    height: 1em;
+    width: 1em;
+    margin-left: 50%;
+}
+
+.player-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 15px;
+    padding: 0px 20px 0px 20px;
+}
+
+.player-social img {
+    height: 1em;
+    width: 1em;
+    margin-left: 10px;
+    transition: 500ms;
+}
+
+.player-social img:hover {
+    background-color: var(--optic-green);
+    border-radius: 7px;
+    transition: 500ms;
+}
+
+.card-game {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
+}
+
+.match {
+    background: linear-gradient(to right, var(--optic-green) 50%, black 50%);
+    max-height: 250px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.team1, .team2 {
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: space-between;
+}
+
+.team1-logo-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.team2-logo-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+.team-logo {
+    margin-right: 28px;
+    max-width: 90px;
+}
+
+.team-name p {
+    font-family: var(--fonte-principal);
+    font-size: 2em;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 3px #00000057;
+}
+
+.team1 .team-maps h2 {
+    color: rgb(255, 255, 255);
+    margin: 10px 5px 10px 0px;
+    font-size: 3em;
+    justify-content: flex-end;
+    text-shadow: 0px 1px 3px #00000057;
+}
+
+.team2 .team-maps h2 {
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 10px 5px;
+    font-size: 3em;
+    justify-content: flex-start;
+    text-shadow: 0px 1px 3px #00000057;
+}
+
+.maps {
+    background: linear-gradient(to right, var(--optic-green) 50%, black 50%);
+    max-height: 200px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+
+    font-family: var(--fonte-principal);
+}
+
+.maps p {
+    font-family: var(--fonte-principal);
+    color: white;
+    padding-top: 13px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: bold;
+    font-size: 2em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+}
+
+.maps .winner {
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #E4E4E4;
+}
+
+.map1 {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+}
+
+.map-image img {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: auto;
+    max-width: 150px;
+}
+
+.map-image p {
+    position: absolute;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.644);
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0px;
+    transform: translate(25%, 265%);
+    
+    /*line-height: 155px;
+    padding-left: 25px;
+    */
+}
+
+
+.next-match {
+    background: linear-gradient(to right, var(--optic-green) 50%, #C60C30 50%);
+    max-height: 250px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.schedule p {
+    font-family: var(--fonte-principal);
+    color: var(--cor-paragrafo);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color: var(--optic-green);
+    min-height: 135px;
+    box-shadow: 0px 2px 2px black;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-social {
+    height: 36px;
+    width: 36px;
+
+    padding: 10px;
+}
